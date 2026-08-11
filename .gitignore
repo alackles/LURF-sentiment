@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+# Secret API keys
+.env
+**/.env
