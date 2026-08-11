@@ -2,3 +2,24 @@
 # Secret API keys
 .env
 **/.env
+
+# Secret API keys
+.env
+**/.env
+
+# Python virtual environments
+.venv/
+**/.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Large OpenAlex data and logs
+final_openalex_pipeline/data/raw_openalex/
+final_openalex_pipeline/data/processed/
+final_openalex_pipeline/logs/
+
+# Temporary editor files
+*.swp
+.*.swp
