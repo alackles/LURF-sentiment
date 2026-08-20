@@ -1,0 +1,7 @@
+ERROR TYPE: <class 'NameError'>
+ERROR MESSAGE: name 'df_en' is not defined
+Traceback (most recent call last):
+  File "/tmp/ipykernel_188838/1408129490.py", line 4, in <module>
+    emotion_scores = df_en["abstract"].apply(score_emotions).apply(pd.Series)
+                     ^^^^^
+NameError: name 'df_en' is not defined
