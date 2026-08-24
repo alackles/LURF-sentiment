@@ -116,6 +116,11 @@ def add_bar_labels(ax, bars, threshold=7):
 keyword_counts = pd.read_csv(TABLES / "keyword_group_counts_by_period.csv")
 sentiment_labels = pd.read_csv(TABLES / "sentiment_label_by_period.csv")
 emotion_by_year = pd.read_csv(TABLES / "emotion_by_year.csv")
+emotion_pct = emotion_by_year.copy()
+for emotion in EMOTIONS:
+    emotion_pct[emotion] = emotion_pct[emotion] * 100
+
+emotion_pct.to_csv(TABLES / "emotion_by_year_percent.csv", index=False)
 sentiment_group = pd.read_csv(TABLES / "sentiment_by_keyword_group_and_period.csv")
 
 # Save small-n check table
@@ -201,7 +206,8 @@ ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3
 save_fig(fig, "02_sentiment_label_percent_by_period.png")
 
 # --------------------------------------------------
-# Figure 3: Emotion framing over time
+# Figure 3A: Emotion score over time
+# This keeps the original line-graph idea using NRCLex scores, not percentages.
 # --------------------------------------------------
 ey = emotion_by_year.copy().sort_values("publication_year")
 
@@ -226,8 +232,8 @@ for emotion in EMOTIONS:
         label=emotion.capitalize(),
     )
 
-ax1.set_title("Emotion Framing Over Time in Conversational AI Abstracts", pad=10)
-ax1.set_ylabel("Mean emotion score")
+ax1.set_title("Emotion Scores Over Time in Conversational AI Abstracts", pad=10)
+ax1.set_ylabel("Mean NRCLex emotion score")
 ax1.set_ylim(0, ey[[f"{e}_smooth" for e in EMOTIONS]].max().max() * 1.08)
 style_axes(ax1, grid_axis="y")
 ax1.legend(frameon=False, ncol=3, loc="upper center", bbox_to_anchor=(0.5, 1.02))
@@ -241,15 +247,96 @@ for emotion in SMALL_EMOTIONS:
         label=emotion.capitalize(),
     )
 
-ax2.set_title("Zoomed View of Smaller Emotion Patterns", fontsize=12, pad=8)
+ax2.set_title("Zoomed View of Smaller Emotion Scores", fontsize=12, pad=8)
 ax2.set_xlabel("Publication year")
-ax2.set_ylabel("Mean emotion score")
+ax2.set_ylabel("Mean NRCLex emotion score")
 ax2.set_ylim(0, ey[[f"{e}_smooth" for e in SMALL_EMOTIONS]].max().max() * 1.18)
 style_axes(ax2, grid_axis="y")
 ax2.legend(frameon=False, ncol=4, loc="upper left")
 
-save_fig(fig, "03_emotion_framing_over_time.png")
+save_fig(fig, "03a_emotion_score_over_time.png")
 
+
+# --------------------------------------------------
+# Figure 3B: Emotion percentage share by time period
+# This separates the percentage idea from the raw score trend.
+# --------------------------------------------------
+def year_to_period(year):
+    if year <= 1999:
+        return "1976-1999 early dialogue / NLI"
+    elif year <= 2015:
+        return "2000-2015 dialogue systems / HCI"
+    elif year <= 2022:
+        return "2016-2022 chatbot + assistant growth"
+    else:
+        return "2023-2025 generative AI / chatbot boom"
+
+
+emotion_period = ey.copy()
+emotion_period["analysis_period"] = emotion_period["publication_year"].apply(year_to_period)
+emotion_period["analysis_period"] = pd.Categorical(
+    emotion_period["analysis_period"],
+    categories=PERIOD_ORDER,
+    ordered=True,
+)
+
+emotion_share = (
+    emotion_period
+    .groupby("analysis_period")[EMOTIONS]
+    .mean()
+    .reset_index()
+)
+
+emotion_share["total_emotion_score"] = emotion_share[EMOTIONS].sum(axis=1)
+
+for emotion in EMOTIONS:
+    emotion_share[emotion] = emotion_share[emotion] / emotion_share["total_emotion_score"] * 100
+
+emotion_share.to_csv(TABLES / "emotion_share_by_period_percent.csv", index=False)
+
+emotion_share["period_label"] = emotion_share["analysis_period"].map(PERIOD_LABELS)
+
+fig, ax = plt.subplots(figsize=(10, 5.8), constrained_layout=True)
+
+left = np.zeros(len(emotion_share))
+
+for emotion in EMOTIONS:
+    vals = emotion_share[emotion].values
+
+    bars = ax.barh(
+        emotion_share["period_label"],
+        vals,
+        left=left,
+        color=EMOTION_COLORS[emotion],
+        edgecolor="white",
+        linewidth=0.8,
+        height=0.65,
+        label=emotion.capitalize(),
+    )
+
+    for bar, val in zip(bars, vals):
+        if val >= 7:
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                bar.get_y() + bar.get_height() / 2,
+                f"{val:.1f}%",
+                ha="center",
+                va="center",
+                fontsize=8.5,
+                color="#222222",
+            )
+
+    left += vals
+
+ax.set_title("Emotion Share by Time Period", pad=12)
+ax.set_xlabel("Percent of total emotion framing within period")
+ax.set_ylabel("")
+ax.set_xlim(0, 100)
+ax.xaxis.set_major_formatter(PercentFormatter(xmax=100))
+style_axes(ax, grid_axis="x")
+ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=6)
+
+save_fig(fig, "03b_emotion_share_by_period.png")
 # --------------------------------------------------
 # Figure 4: Mean sentiment by keyword group and period
 # --------------------------------------------------
