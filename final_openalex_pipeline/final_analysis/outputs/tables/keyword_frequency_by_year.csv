@@ -1,0 +1,363 @@
+publication_year,keyword,count
+1976,dialog system,5
+1976,dialogue system,3
+1976,natural language interface,1
+1977,chatbot,1
+1977,conversational agent,1
+1977,dialog system,3
+1977,dialogue system,4
+1977,natural language interface,10
+1978,dialog system,2
+1978,dialogue system,9
+1978,natural language interface,6
+1978,spoken dialogue system,3
+1979,dialog system,4
+1979,dialogue system,4
+1979,natural language interface,5
+1980,dialog system,6
+1980,dialogue system,7
+1980,natural language interface,5
+1981,dialog system,4
+1981,dialogue system,3
+1981,natural language interface,10
+1982,dialog system,9
+1982,dialogue system,5
+1982,natural language interface,12
+1983,dialog system,3
+1983,dialogue system,8
+1983,natural language interface,24
+1984,dialog system,2
+1984,dialogue system,14
+1984,natural language interface,31
+1985,dialog system,5
+1985,dialogue system,6
+1985,natural language interface,30
+1986,dialog system,5
+1986,dialogue system,7
+1986,natural language interface,43
+1987,dialog system,7
+1987,dialogue system,5
+1987,natural language interface,58
+1988,dialog system,12
+1988,dialogue system,19
+1988,natural language interface,54
+1989,dialog system,12
+1989,dialogue system,15
+1989,natural language interface,44
+1989,spoken dialogue system,2
+1990,dialog system,10
+1990,dialogue system,18
+1990,natural language interface,48
+1991,dialog system,7
+1991,dialogue system,17
+1991,natural language interface,37
+1991,spoken dialogue system,2
+1992,dialog system,11
+1992,dialogue system,20
+1992,natural language interface,39
+1992,spoken dialogue system,2
+1993,dialog system,10
+1993,dialogue system,41
+1993,natural language interface,40
+1993,spoken dialogue system,5
+1994,chatterbot,1
+1994,conversational agent,1
+1994,dialog system,17
+1994,dialogue system,35
+1994,natural language interface,28
+1994,spoken dialogue system,9
+1995,chatbot,1
+1995,conversational agent,1
+1995,dialog system,15
+1995,dialogue system,39
+1995,natural language interface,25
+1995,spoken dialogue system,12
+1996,chatbot,3
+1996,conversational agent,1
+1996,dialog system,10
+1996,dialogue system,50
+1996,natural language interface,24
+1996,spoken dialogue system,14
+1997,conversational agent,8
+1997,dialog system,15
+1997,dialogue system,89
+1997,natural language interface,22
+1997,spoken dialogue system,42
+1998,chatterbot,1
+1998,conversational agent,6
+1998,dialog system,25
+1998,dialogue system,75
+1998,natural language interface,24
+1998,spoken dialogue system,46
+1998,voice assistant,2
+1999,chatbot,1
+1999,conversational agent,10
+1999,dialog system,32
+1999,dialogue system,89
+1999,embodied conversational agent,4
+1999,natural language interface,28
+1999,spoken dialogue system,56
+1999,virtual assistant,1
+2000,chatbot,2
+2000,chatterbot,1
+2000,conversational agent,26
+2000,dialog system,51
+2000,dialogue system,154
+2000,embodied conversational agent,15
+2000,natural language interface,22
+2000,spoken dialogue system,64
+2000,virtual assistant,5
+2001,chatbot,2
+2001,chatterbot,6
+2001,conversational agent,18
+2001,dialog system,39
+2001,dialogue system,117
+2001,embodied conversational agent,8
+2001,natural language interface,20
+2001,spoken dialogue system,57
+2001,virtual assistant,2
+2002,chatbot,7
+2002,chatterbot,2
+2002,conversational agent,54
+2002,dialog system,93
+2002,dialogue system,210
+2002,embodied conversational agent,29
+2002,natural language interface,59
+2002,spoken dialogue system,99
+2002,virtual assistant,4
+2003,chatbot,14
+2003,chatterbot,9
+2003,conversational agent,53
+2003,dialog system,74
+2003,dialogue system,184
+2003,embodied conversational agent,28
+2003,natural language interface,47
+2003,spoken dialogue system,80
+2003,virtual assistant,4
+2004,chatbot,10
+2004,chatterbot,12
+2004,conversational agent,71
+2004,dialog system,80
+2004,dialogue system,220
+2004,embodied conversational agent,33
+2004,natural language interface,37
+2004,spoken dialogue system,108
+2004,virtual assistant,8
+2005,chatbot,15
+2005,chatterbot,15
+2005,conversational agent,96
+2005,dialog system,95
+2005,dialogue system,202
+2005,embodied conversational agent,56
+2005,natural language interface,47
+2005,spoken dialogue system,82
+2005,virtual assistant,9
+2006,chatbot,11
+2006,chatterbot,11
+2006,conversational agent,76
+2006,dialog system,117
+2006,dialogue system,228
+2006,embodied conversational agent,48
+2006,natural language interface,48
+2006,spoken dialogue system,95
+2006,virtual assistant,12
+2007,chatbot,24
+2007,chatterbot,9
+2007,conversational agent,99
+2007,dialog system,87
+2007,dialogue system,204
+2007,embodied conversational agent,54
+2007,natural language interface,57
+2007,spoken dialogue system,80
+2007,virtual assistant,9
+2008,chatbot,27
+2008,chatterbot,12
+2008,conversational AI,1
+2008,conversational agent,110
+2008,dialog system,119
+2008,dialogue system,196
+2008,embodied conversational agent,64
+2008,natural language interface,38
+2008,spoken dialogue system,80
+2008,virtual assistant,12
+2009,chatbot,25
+2009,chatterbot,20
+2009,conversational AI,2
+2009,conversational agent,98
+2009,dialog system,105
+2009,dialogue system,215
+2009,embodied conversational agent,56
+2009,natural language interface,63
+2009,spoken dialogue system,100
+2009,virtual assistant,9
+2010,chatbot,36
+2010,chatterbot,25
+2010,conversational AI,3
+2010,conversational agent,125
+2010,dialog system,110
+2010,dialogue system,236
+2010,embodied conversational agent,55
+2010,natural language interface,55
+2010,spoken dialogue system,106
+2010,virtual assistant,7
+2010,voice assistant,1
+2011,chatbot,26
+2011,chatterbot,24
+2011,conversational agent,162
+2011,dialog system,85
+2011,dialogue system,220
+2011,embodied conversational agent,67
+2011,natural language interface,40
+2011,spoken dialogue system,87
+2011,virtual assistant,17
+2011,voice assistant,1
+2012,chatbot,34
+2012,chatterbot,17
+2012,conversational agent,123
+2012,dialog system,85
+2012,dialogue system,225
+2012,embodied conversational agent,54
+2012,natural language interface,54
+2012,spoken dialogue system,103
+2012,virtual assistant,13
+2012,voice assistant,2
+2013,chatbot,49
+2013,chatterbot,12
+2013,conversational agent,135
+2013,dialog system,93
+2013,dialogue system,167
+2013,embodied conversational agent,60
+2013,natural language interface,30
+2013,spoken dialogue system,62
+2013,virtual assistant,17
+2013,voice assistant,5
+2014,chatbot,54
+2014,chatterbot,8
+2014,conversational agent,131
+2014,dialog system,86
+2014,dialogue system,208
+2014,embodied conversational agent,44
+2014,natural language interface,54
+2014,spoken dialogue system,80
+2014,virtual assistant,19
+2014,voice assistant,6
+2015,chatbot,47
+2015,chatterbot,12
+2015,conversational agent,116
+2015,dialog system,90
+2015,dialogue system,189
+2015,embodied conversational agent,49
+2015,natural language interface,53
+2015,spoken dialogue system,63
+2015,virtual assistant,33
+2015,voice assistant,5
+2016,chatbot,102
+2016,chatterbot,17
+2016,conversational AI,2
+2016,conversational agent,124
+2016,dialog system,99
+2016,dialogue system,233
+2016,embodied conversational agent,39
+2016,natural language interface,69
+2016,spoken dialogue system,81
+2016,virtual assistant,60
+2016,voice assistant,6
+2017,chatbot,368
+2017,chatterbot,20
+2017,conversational AI,5
+2017,conversational agent,175
+2017,dialog system,108
+2017,dialogue system,230
+2017,embodied conversational agent,43
+2017,natural language interface,75
+2017,spoken dialogue system,65
+2017,virtual assistant,80
+2017,voice assistant,30
+2018,chatbot,943
+2018,chatterbot,17
+2018,conversational AI,29
+2018,conversational agent,311
+2018,dialog system,167
+2018,dialogue system,394
+2018,embodied conversational agent,49
+2018,natural language interface,73
+2018,spoken dialogue system,75
+2018,virtual assistant,200
+2018,voice assistant,98
+2019,chatbot,1534
+2019,chatterbot,14
+2019,conversational AI,48
+2019,conversational agent,436
+2019,dialog system,179
+2019,dialogue system,463
+2019,embodied conversational agent,54
+2019,natural language interface,93
+2019,spoken dialogue system,70
+2019,virtual assistant,299
+2019,voice assistant,251
+2020,chatbot,2076
+2020,chatterbot,19
+2020,conversational AI,91
+2020,conversational agent,583
+2020,dialog system,204
+2020,dialogue system,566
+2020,embodied conversational agent,61
+2020,natural language interface,85
+2020,spoken dialogue system,49
+2020,virtual assistant,403
+2020,voice assistant,383
+2021,chatbot,2302
+2021,chatterbot,23
+2021,conversational AI,144
+2021,conversational agent,617
+2021,dialog system,239
+2021,dialogue system,626
+2021,embodied conversational agent,84
+2021,natural language interface,91
+2021,spoken dialogue system,39
+2021,virtual assistant,467
+2021,voice assistant,460
+2022,chatbot,2704
+2022,chatterbot,18
+2022,conversational AI,204
+2022,conversational agent,669
+2022,dialog system,184
+2022,dialogue system,672
+2022,embodied conversational agent,57
+2022,natural language interface,90
+2022,spoken dialogue system,48
+2022,virtual assistant,475
+2022,voice assistant,543
+2023,chatbot,6010
+2023,chatterbot,12
+2023,conversational AI,423
+2023,conversational agent,920
+2023,dialog system,167
+2023,dialogue system,754
+2023,embodied conversational agent,79
+2023,natural language interface,117
+2023,spoken dialogue system,43
+2023,virtual assistant,795
+2023,voice assistant,691
+2024,chatbot,9967
+2024,chatterbot,14
+2024,conversational AI,785
+2024,conversational agent,1000
+2024,dialog system,118
+2024,dialogue system,726
+2024,embodied conversational agent,55
+2024,natural language interface,164
+2024,spoken dialogue system,39
+2024,virtual assistant,1156
+2024,voice assistant,719
+2025,chatbot,16274
+2025,chatterbot,13
+2025,conversational AI,1726
+2025,conversational agent,1706
+2025,dialog system,83
+2025,dialogue system,783
+2025,embodied conversational agent,94
+2025,natural language interface,382
+2025,spoken dialogue system,71
+2025,virtual assistant,1669
+2025,voice assistant,1029
