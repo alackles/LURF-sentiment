@@ -1,0 +1,35 @@
+
+Final Sentiment/Framing Analysis Summary
+
+Input file:
+/home/khoi/summer_research_workspace/LURF-sentiment/final_openalex_pipeline/data/processed/df_en_scored.parquet
+
+Records analyzed:
+52,448 English records with abstracts
+
+Publication year range:
+1976-2025
+
+Sentiment label counts:
+sentiment_label
+positive    47098
+negative     3746
+neutral      1604
+
+Mean emotion scores:
+trust           0.206522
+anticipation    0.097877
+joy             0.053412
+fear            0.051820
+sadness         0.032977
+anger           0.027047
+
+Final interpretation:
+This analysis treats VADER and NRCLex results as sentiment/framing indicators,
+not as perfect measures of author attitude. The goal is to compare how emotional
+and sentiment framing changes across time periods and keyword groups as the field
+moves from older dialogue-system terminology toward newer chatbot and
+conversational-AI terminology.
+
+Small-n interpretation note:
+The early-period sentiment estimates for some keyword groups should be interpreted cautiously. In 1976–1999, the chatbot/conversational-AI group has only 5 records, and the agent/assistant group has 26 records. This means the high early chatbot sentiment score is likely sensitive to a very small sample size rather than a stable field-wide pattern.

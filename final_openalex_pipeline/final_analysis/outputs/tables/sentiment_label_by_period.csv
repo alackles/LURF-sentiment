@@ -1,0 +1,13 @@
+analysis_period,sentiment_label,n,percent_within_period
+1976-1999 early dialogue / NLI,negative,83,8.04263565891473
+1976-1999 early dialogue / NLI,neutral,63,6.104651162790697
+1976-1999 early dialogue / NLI,positive,886,85.85271317829456
+2000-2015 dialogue systems / HCI,negative,488,8.669390655533842
+2000-2015 dialogue systems / HCI,neutral,371,6.590868715580032
+2000-2015 dialogue systems / HCI,positive,4770,84.73974062888612
+2016-2022 chatbot + assistant growth,negative,1203,7.853505679592636
+2016-2022 chatbot + assistant growth,neutral,583,3.805979892936415
+2016-2022 chatbot + assistant growth,positive,13532,88.34051442747095
+2023-2025 generative AI / chatbot boom,negative,1972,6.472152023368014
+2023-2025 generative AI / chatbot boom,neutral,587,1.9265482949883488
+2023-2025 generative AI / chatbot boom,positive,27910,91.60129968164364

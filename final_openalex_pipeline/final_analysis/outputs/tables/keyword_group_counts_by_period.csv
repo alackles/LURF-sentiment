@@ -1,0 +1,13 @@
+analysis_period,keyword_group,n,percent_within_period
+1976-1999 early dialogue / NLI,agent/assistant terms,26,2.18303946263644
+1976-1999 early dialogue / NLI,chatbot/conversational-AI terms,5,0.41981528127623846
+1976-1999 early dialogue / NLI,older dialogue-system terms,1160,97.39714525608733
+2000-2015 dialogue systems / HCI,agent/assistant terms,1790,23.74950245455752
+2000-2015 dialogue systems / HCI,chatbot/conversational-AI terms,336,4.458007164654372
+2000-2015 dialogue systems / HCI,older dialogue-system terms,5411,71.79249038078811
+2016-2022 chatbot + assistant growth,agent/assistant terms,5939,32.961482961482965
+2016-2022 chatbot + assistant growth,chatbot/conversational-AI terms,7417,41.16439116439116
+2016-2022 chatbot + assistant growth,older dialogue-system terms,4662,25.874125874125873
+2023-2025 generative AI / chatbot boom,agent/assistant terms,7651,22.34847378413904
+2023-2025 generative AI / chatbot boom,chatbot/conversational-AI terms,23839,69.63341609463998
+2023-2025 generative AI / chatbot boom,older dialogue-system terms,2745,8.018110121220973

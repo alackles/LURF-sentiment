@@ -1,0 +1,5 @@
+analysis_period,n,mean_sentiment,median_sentiment
+1976-1999 early dialogue / NLI,1032,0.6062288759689922,0.7717
+2000-2015 dialogue systems / HCI,5629,0.5843584117960562,0.765
+2016-2022 chatbot + assistant growth,15318,0.6876182334508422,0.8908
+2023-2025 generative AI / chatbot boom,30469,0.7720698217860776,0.946
